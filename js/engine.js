@@ -166,6 +166,36 @@ function showResult() {
         })
         .join("");
 
+     const recommendedTools = matchedResult.recommendedTools ?? [];
+
+const recommendedToolsHtml = recommendedTools
+    .map(function (tool) {
+        return `
+            <a
+                class="tool-link"
+                href="${tool.url}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ${tool.name}
+            </a>
+        `;
+    })
+    .join("");
+
+const recommendedToolsSection =
+    recommendedTools.length > 0
+        ? `
+            <div class="result-section">
+                <h3>おすすめツール</h3>
+
+                <div class="tool-list">
+                    ${recommendedToolsHtml}
+                </div>
+            </div>
+        `
+        : "";
+        
     app.innerHTML = `
         <section class="result-card result-${matchedResult.theme}">
 
@@ -205,6 +235,14 @@ function showResult() {
                     ${recommendedJobsHtml}
                 </ul>
             </div>
+
+            <div class="result-section">
+    <h3>おすすめツール</h3>
+
+    <div class="tool-list">
+        ${recommendedToolsHtml}
+    </div>
+</div>
 
             <div class="result-section">
                 <h3>あまり向いていない副業</h3>

@@ -10,6 +10,18 @@ const results = {
             "Webサイトや診断サービス制作",
             "SNS投稿・記事・電子書籍制作"
         ],
+
+
+recommendedTools: [
+  {
+    name: "ChatGPT Plus",
+    url: "https://chatgpt.com"
+  },
+  {
+    name: "Canva",
+    url: "https://www.canva.com/"
+  }
+],
         notRecommended:
             "決められた手順を変えず、同じ作業だけを長期間続ける副業",
         firstStep:
