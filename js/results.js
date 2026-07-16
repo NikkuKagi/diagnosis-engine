@@ -29,21 +29,41 @@ recommendedTools: [
     },
 
     steady: {
-        theme: "steady",
-        title: "💻 コツコツ積み上げタイプ",
-        shortTitle: "コツコツ積み上げタイプ",
-        description:
-            "計画を立てて作業を継続し、時間をかけて成果を育てることが得意なタイプです。",
-        recommendedJobs: [
-            "ブログ・アフィリエイト",
-            "プログラミング・Web制作",
-            "データ整理・資料作成・業務効率化"
-        ],
-        notRecommended:
-            "収入の変動が大きく、毎日の営業成績だけで評価される副業",
-        firstStep:
-            "毎日30分作業する時間を決め、まず7日間続けてみましょう。"
-    },
+    theme: "steady",
+    title: "💻 コツコツ積み上げタイプ",
+    shortTitle: "コツコツ積み上げタイプ",
+    description:
+        "計画を立てて作業を継続し、時間をかけて成果を育てることが得意なタイプです。",
+
+    recommendedJobs: [
+        "ブログ・アフィリエイト",
+        "プログラミング・Web制作",
+        "データ整理・資料作成・業務効率化"
+    ],
+
+    recommendedTools: [
+        {
+            name: "ChatGPT",
+            url: "https://chatgpt.com"
+        },
+        {
+            name: "Notion",
+            url: "https://www.notion.so"
+        },
+        {
+            name: "GitHub",
+            url: "https://github.com"
+        }
+    ],
+
+    notRecommended:
+        "収入の変動が大きく、毎日の営業成績だけで評価される副業",
+
+    firstStep:
+        "毎日30分作業する時間を決め、まず7日間続けてみましょう。"
+},
+
+    
 
     communication: {
         theme: "communication",
@@ -56,6 +76,21 @@ recommendedTools: [
             "相談・サポート・カスタマー対応",
             "営業代行・商品紹介・講師業"
         ],
+
+        recommendedTools: [
+    {
+        name: "ChatGPT",
+        url: "https://chatgpt.com"
+    },
+    {
+        name: "Canva",
+        url: "https://www.canva.com"
+    },
+    {
+        name: "Zoom",
+        url: "https://zoom.us"
+    }
+],
         notRecommended:
             "人とのやり取りがほとんどなく、一人で黙々と完結する副業",
         firstStep:
@@ -73,6 +108,21 @@ recommendedTools: [
             "複数の副業を小さく試す活動",
             "新商品・新企画・情報発信への挑戦"
         ],
+
+        recommendedTools: [
+    {
+        name: "ChatGPT",
+        url: "https://chatgpt.com"
+    },
+    {
+        name: "Canva",
+        url: "https://www.canva.com"
+    },
+    {
+        name: "GitHub",
+        url: "https://github.com"
+    }
+],
         notRecommended:
             "変化がほとんどなく、方法や役割が完全に固定された副業",
         firstStep:
