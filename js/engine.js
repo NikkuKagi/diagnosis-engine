@@ -160,6 +160,15 @@ function showResult() {
     const matchedResult = results[highestScoreKey];
     const percentage = calculatePercentage(highestScoreKey);
 
+    const detailPages = {
+    creative: "creator.html",
+    steady: "steady.html",
+    communication: "communication.html",
+    challenge: "business.html"
+};
+
+const detailPage = detailPages[highestScoreKey];
+
     const recommendedJobsHtml = matchedResult.recommendedJobs
         .map(function (job) {
             return `<li>${job}</li>`;
@@ -255,6 +264,13 @@ const recommendedToolsSection =
 
                 <p>${matchedResult.firstStep}</p>
             </div>
+
+            <a
+    class="detail-link"
+    href="${detailPage}"
+>
+    このタイプの詳しい解説を見る
+</a>
 
             <div class="share-area">
                 <button id="shareButton" type="button">
