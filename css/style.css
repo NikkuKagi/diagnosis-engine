@@ -673,3 +673,27 @@ button:focus-visible {
 .tool-link:hover {
     transform: translateY(-2px);
 }
+
+/* =========================
+   フッターメニュー
+========================= */
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    margin-bottom: 14px;
+}
+
+.footer-nav a {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #e11d48;
+    text-decoration: underline;
+}
